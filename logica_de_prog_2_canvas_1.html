@@ -10,10 +10,17 @@
     <Canvas width="600" height="400"></Canvas>
 
     <Script>
-        var telaCanvas = document.querySelector("canvas");
-        var pincelCanvas = tela.getContext("2d");
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext("2d");
+        
+        //cor do canvas  
+        pincel.fillStyle = "blue";
 
-        //preciso definir o tamanho do eixo x,y e o tamanho dimensional
+        //               x|y|width|height
+        pincel.fillRect(0, 0, 600, 400);
+
+
+        
     </Script>
 </body>
 </html>
