@@ -13,14 +13,17 @@
         var tela = document.querySelector("canvas");
         var pincel = tela.getContext("2d");
         
-        //cor do canvas  
-        pincel.fillStyle = "blue";
-
+        //cor de fundo do canvas  
+        pincel.fillStyle = "grey";
         //               x|y|width|height
         pincel.fillRect(0, 0, 600, 400);
 
+        pincel.fillStyle = "green";
+        pincel.fillRect(0,0,200,400);
 
-        
+        //para pintar de outro lado do canvas, alteramos as coordenadas (x,y)
+        pincel.fillStyle = "red";
+        pincel.fillRect(400,0,200,400);
     </Script>
 </body>
 </html>
